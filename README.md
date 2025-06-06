@@ -24,3 +24,7 @@ This script is designed for IT administrators who want to:
 - **Guest members are saved in a separate folder**.
 
 ---
+## 🛠️ Requirements
+```powershell
+Install-Module MSAL.PS -Scope CurrentUser
+Install-Module ImportExcel -Scope CurrentUser
