@@ -28,3 +28,10 @@ This script is designed for IT administrators who want to:
 ```powershell
 Install-Module MSAL.PS -Scope CurrentUser
 Install-Module ImportExcel -Scope CurrentUser
+---
+🔐 Required Permissions
+Your registered app must have the following Microsoft Graph API Application permissions:
+
+Group.Read.All
+
+User.Read.All
