@@ -33,5 +33,18 @@ Install-Module ImportExcel -Scope CurrentUser
 Your registered app must have the following Microsoft Graph API Application permissions:
 
 Group.Read.All
-
 User.Read.All
+
+🚀 Usage
+Clone or download this script.
+
+Set your Azure AD app credentials in the script:
+```powershell
+$tenantId     = "<your-tenant-id>"
+$clientId     = "<your-client-id>"
+$clientSecret = "<your-client-secret>"
+
+
+Run the script:
+```powershell
+.\Export-DLMembers.ps1
