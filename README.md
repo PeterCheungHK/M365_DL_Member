@@ -24,27 +24,40 @@ This script is designed for IT administrators who want to:
 - **Guest members are saved in a separate folder**.
 
 ---
+
 ## 🛠️ Requirements
+
+ PowerShell Modules:
+ - [`MSAL.PS`](https://www.powershellgallery.com/packages/MSAL.PS)
+- [`ImportExcel`](https://www.powershellgallery.com/packages/ImportExcel)
+
+  Install required modules:
 ```powershell
 Install-Module MSAL.PS -Scope CurrentUser
 Install-Module ImportExcel -Scope CurrentUser
+```
 ---
-🔐 Required Permissions
+
+## 🔐 Required Permissions
 Your registered app must have the following Microsoft Graph API Application permissions:
 
-Group.Read.All
-User.Read.All
+- Group.Read.All
+- User.Read.All
 
-🚀 Usage
-Clone or download this script.
+These require admin consent in the Azure portal.
 
-Set your Azure AD app credentials in the script:
+
+## Set your Azure AD app credentials in the script:
 ```powershell
 $tenantId     = "<your-tenant-id>"
 $clientId     = "<your-client-id>"
 $clientSecret = "<your-client-secret>"
+```
 
+## 🚀 Usage
+Clone or download this script.
 
 Run the script:
 ```powershell
 .\Export-DLMembers.ps1
+```
