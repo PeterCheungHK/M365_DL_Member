@@ -55,7 +55,15 @@ $clientSecret = "<your-client-secret>"
 ## 🚀 Usage
 Clone or download this script.
 
-Run the script:
-```powershell
-.\Export-DLMembers.ps1
-```
+
+
+A new script, `Export-DLDirectMembers.ps1`, is now available to export **only direct members** of each Distribution List using the `/groups/{id}/members` endpoint in Microsoft Graph. This avoids listing members who are included via nested groups.
+
+ ✅ Use `Export-DLDirectMembers.ps1` if you want a **precise view of directly assigned users** in each DL.
+
+| Script Name                 | Description                              |
+|----------------------------|------------------------------------------|
+| `Export-DLMembers.ps1`     | Exports **all** members (transitive)     |
+| `Export-DLDirectMembers.ps1` | Exports **only direct** members           |
+
+
