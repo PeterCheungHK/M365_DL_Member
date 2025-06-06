@@ -21,8 +21,6 @@ This script is designed for IT administrators who want to:
 - Filters to only **Distribution Lists** (not Microsoft 365 or security groups).
 - Follows `@odata.nextLink` pagination for large groups.
 - Exports data to `.xlsx` using `ImportExcel`.
-- **Guest members are saved in a separate folder**.
-
 ---
 
 ## 🛠️ Requirements
